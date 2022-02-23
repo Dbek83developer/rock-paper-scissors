@@ -29,7 +29,7 @@ import random
 move = input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n")
 move_player = int(move)
 move_pc = random.randint(0, 2)
-rps = ["rock", "paper", "scissors"]
+rps = [rock, paper, scissors]
 """
     Rock wins against scissors.
 
@@ -38,40 +38,41 @@ rps = ["rock", "paper", "scissors"]
     Paper wins against rock.
 """
 #move_player_st = rps[move_player]
-#print(move_player_st)
-#print(rps[move_pc])
+print(rps[move_player])
+print("Computer choice\n")
+print(rps[move_pc])
 if move_player == 0:
-  print(rock)
+ # print(rock)
   if move_pc == 0:
-    print(rock)
+  #  print(rock)
     print("Draw")
   elif move_pc == 1:
-    print(paper)
+   # print(paper)
     print("You lose")
   elif move_pc == 2:
-    print(scissors)
+    #print(scissors)
     print("You win!!!")
 elif move_player == 1:
-  print(paper)
+  #print(paper)
   if move_pc == 1:
-    print(paper)
+   # print(paper)
     print("Draw")
   elif move_pc == 2:
-    print(scissors)
+    #print(scissors)
     print("You lose")
   elif move_pc == 0:
-    print(rock)
+    #print(rock)
     print("You win!!!")
 elif move_player == 2:
-  print(scissors)
+  #print(scissors)
   if move_pc == 2:
-    print(scissors)
+   # print(scissors)
     print("Draw")
   elif move_pc == 0:
-    print(rock)
+    #print(rock)
     print("You lose")
   elif move_pc == 1:
-    print(paper)
+    #print(paper)
     print("You win!!!")
   else:
     print("You choose wrong. You lose")
