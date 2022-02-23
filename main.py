@@ -26,7 +26,7 @@ scissors = '''
 '''
 import random
 #Write your code below this line 👇
-move = input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.")
+move = input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n")
 move_player = int(move)
 move_pc = random.randint(0, 2)
 rps = ["rock", "paper", "scissors"]
@@ -62,7 +62,7 @@ elif move_player == 1:
   elif move_pc == 0:
     print(rock)
     print("You win!!!")
-elif move_pc == 2:
+elif move_player == 2:
   print(scissors)
   if move_pc == 2:
     print(scissors)
@@ -74,6 +74,6 @@ elif move_pc == 2:
     print(paper)
     print("You win!!!")
   else:
-    print("You choose wrong")
+    print("You choose wrong. You lose")
   
 #print(f"your choice {move}, computer choice {move_pc}")
