@@ -38,9 +38,12 @@ rps = [rock, paper, scissors]
     Paper wins against rock.
 """
 #move_player_st = rps[move_player]
-print(rps[move_player])
-print("Computer choice\n")
-print(rps[move_pc])
+if move_player > -1 and move_player < 3:
+  print(rps[move_player])
+  print("Computer choice:\n")
+  print(rps[move_pc])
+else:
+  print("You choose wrong. You lose")
 if move_player == 0:
  # print(rock)
   if move_pc == 0:
